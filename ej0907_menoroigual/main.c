@@ -25,10 +25,11 @@ int main(int argc, char *varg[])
         {
             printf("Estudiante 3 es el menor de todos");
         }
-        else {
-            
-        }
-
     }
+    else
+    {
+        printf("Hay edades iguales");
+    }
+
     return 0;
 }
