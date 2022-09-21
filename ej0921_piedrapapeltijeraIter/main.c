@@ -5,12 +5,15 @@
 int main(int argc, char *varg[])
 {
     int user_data, pc_data;
-    printf("Elija una de las siguietnes opciones:\n");
-    printf("\t1. Piedra\n");
-    printf("\t2. Papel\n");
-    printf("\t3. Tijera\n");
-    printf("Su opción es: ");
-    scanf("%d", &user_data);
+    //menu se repite si el usuario ingresa un dato erróneo
+    do { 
+        printf("Elija una de las siguientes opciones:\n");
+        printf("\t1. Piedra\n");
+        printf("\t2. Papel\n");
+        printf("\t3. Tijera\n");
+        printf("Su opción es: ");
+        scanf("%d", &user_data);
+    }while(user_data != 1 && user_data != 2 && user_data != 3);
 
     // Generar número aleatorio
     // dar una semilla
