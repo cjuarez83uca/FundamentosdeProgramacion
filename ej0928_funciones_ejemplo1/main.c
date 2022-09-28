@@ -4,7 +4,6 @@ int main(int argc, char *argv[])
 {
     int a;
 
-    a=printf("hola mundo");
-
-    printf("\nEl valor de argv[0] es: %s",argv[0]);
+    printf("el valor de argc es: %d\n", argc);
+    a = printf("hola mundo %s\n", argv[1]);
 }
